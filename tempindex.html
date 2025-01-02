@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics Department</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Math Dept.</h1>
+            </div>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#objective">Objective</a></li>
+                <li><a href="#faculty">Faculty</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="animate__animated animate__fadeInDown">Welcome to the Mathematics Department</h1>
+            <p class="animate__animated animate__fadeInUp">Where Numbers Meet Innovation</p>
+            <a href="#overview" class="hero-btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="overview" class="section">
+        <div class="container grid-2">
+            <div class="overview-text">
+                <h2>Overview</h2>
+                <p>
+                    The Department of Mathematics, established in 1946, offers an undergraduate program with around 620 students and five faculty members. It follows a three-year unitized syllabus (FYBSc, SYBSc, TYBSc). The department hosts extracurricular activities, including a yearly Mathematical Festival on National Mathematics Day, celebrating Ramanujan, with competitions and games. Guest lectures and short-term courses are also organized. Under NEP 2020, students gain opportunities in fields like banking, data science, and teaching. Students frequently attend MTTS programs, and one recently won second prize in a state-level seminar competition. The department also regularly updates its library with relevant books.</p>
+            </div>
+            <div class="overview-image">
+                <img src="2.png" width="400" alt="">
+                <!-- <video src="videoplayback.mp4" controls="true" height="300" autoplay="true"></video> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="objective" class="section bg-light">
+        <div class="container grid-2">
+            <div class="objective-image">
+                <img src="3.png" width="400" alt="Mathematical Research">
+            </div>
+            <div class="objective-text">
+                <h2>Our Objective</h2>
+                <p>To advance the frontiers of mathematical knowledge while preparing students for leadership roles in academia, industry, and government. We emphasize critical thinking, problem-solving, and computational skills, ensuring a well-rounded mathematical education.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faculty" class="section">
+        <div class="container">
+            <h2>Meet Our Faculty</h2>
+            <div class="faculty-grid">
+                <div class="faculty-card" data-id="prof1">
+                    <img src="faculty1.png" alt="Professor 1">
+                    <h3>Rajendra Y. Chavan</h3>
+                    <p>M.Sc.(Mathematics)
+                        (Pune University)
+                        </p>
+                        <p>Assistant Professor 
+                            (Permanent)
+                            </p>
+                            <p>Head of Dept.</p>
+                </div>
+                <div class="faculty-card" data-id="prof2">
+                    <img src="faculty2.png" alt="Professor 2">
+                    <h3>Chetana V. Visave</h3>
+                    <p>M.Sc. (Mathematics), NET, SET
+                        (Pune University)
+                        </p>
+                        <p>Assistant Professor
+                            (Permanent)
+                            </p>
+                </div>
+                <div class="faculty-card" data-id="prof3">
+                    <img src="faculty3.png" alt="Professor 3">
+                    <h3>Rajan Jha</h3>
+                    <p>M.Sc.(Mathematics),
+                        SET,GATE
+                        (Indian Institute of Technology, Ropar, Punjab)
+                        </p>
+                        <p>Assistant Professor</p>
+                        <p>CHB Faculty</p>
+                </div>
+                <div class="faculty-card" data-id="prof4">
+                    <img src="profile7.webp" alt="Professor 4">
+                    <h3>Dr. David Brown</h3>
+                    <p>PhD in Computational Mathematics</p>
+                </div>
+                <div class="faculty-card" data-id="prof5">
+                    <img src="profile8.jpg" alt="Professor 5">
+                    <h3>Dr. Emma White</h3>
+                    <p>PhD in Mathematical Physics</p>
+                </div>
+                <div class="faculty-card" data-id="prof6">
+                    <img src="profile9.avif" alt="Professor 6">
+                    <h3>Dr. Frank Green</h3>
+                    <p>PhD in Statistics</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="faculty-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-desc"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>For more information or inquiries, reach out to us:</p>
+            <div class="contact-details">
+                <p><strong>Email:</strong> <a href="mailto:mathdept@example.com">mathdept@example.com</a></p>
+                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                <p><strong>Office Hours:</strong> Monday - Friday: 9:00 AM - 5:00 PM</p>
+                <p><strong>Address:</strong> 123 Mathematics Lane, University City, CA 90000</p>
+            </div>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mathematics Department. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

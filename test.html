@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics Department</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #222;
+            color: #ddd;
+        }
+        h1, h2, h3 {
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .section {
+            background-color: #333;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #111;
+            padding: 1rem;
+        }
+        .navbar h1 {
+            color: #fff;
+        }
+        .navbar ul {
+            display: flex;
+            list-style: none;
+        }
+        .navbar ul li {
+            margin: 0 1rem;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s ease;
+        }
+        .navbar ul li a:hover {
+            color: #00f;
+            box-shadow: 0 0 20px rgba(0, 204, 255, 0.8);
+        }
+
+        /* Hero Section */
+        #hero {
+            height: 90vh;
+            background: url('banner10.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        #hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 0 0 10px white;
+        }
+        #hero p {
+            font-size: 1.5rem;
+            text-shadow: 0 0 10px white;
+        }
+        #hero .hero-btn {
+            margin-top: 1rem;
+            padding: 1rem 2rem;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s ease-in-out;
+        }
+        #hero .hero-btn:hover {
+            color: #00f;
+            box-shadow: 0 0 20px rgba(0, 204, 255, 0.8);
+            font-weight: bold; /* Bold on hover */
+        }
+
+        /* Grid Layout */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+        .grid-2 img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Faculty Grid */
+        .faculty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Reduced size */
+            gap: 1rem;
+        }
+        .faculty-card {
+            padding: 1rem;
+            background-color: #444;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .faculty-card img {
+            width: 80%; /* Adjusted size */
+            border-radius: 50%;
+        }
+
+        /* Gallery */
+        .gallery-top {
+            display: flex;
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 2rem 0;
+        }
+        .gallery-top img {
+            width: 300px;
+            margin-right: 1rem;
+            border-radius: 8px;
+        }
+        .scrolling-left {
+            animation: scroll-left 10s linear infinite;
+        }
+        @keyframes scroll-left {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Alumni Section */
+        #alumni {
+            background-color: #444;
+        }
+        .alumni-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Same as faculty */
+            gap: 1rem;
+        }
+        .alumni-card {
+            padding: 1rem;
+            background-color: #555;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .alumni-card img {
+            width: 80%;
+            border-radius: 50%;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #222;
+            padding: 2rem;
+            color: white;
+        }
+        .contact-info {
+            margin-bottom: 1rem;
+        }
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+
+        /* Footer */
+        footer {
+            padding: 1rem;
+            background-color: #111;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Mathematics Department</h1>
+        </div>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#objectives">Objectives</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="hero">
+    <div class="hero-content">
+        <h1>Welcome to the Mathematics Department</h1>
+        <p>Advancing Mathematical Excellence</p>
+        <a href="#overview" class="hero-btn">Learn More</a>
+    </div>
+</section>
+
+<section id="overview" class="section grid-2">
+    <div class="overview-text">
+        <h2>Overview</h2>
+        <p>Welcome to the Mathematics Department. We focus on theoretical and applied mathematics for the modern era.</p>
+    </div>
+    <div class="overview-image">
+        <img src="2.png" alt="Math Department Overview">
+    </div>
+</section>
+
+<section id="objectives" class="section grid-2">
+    <div class="objective-image">
+        <img src="3.png" alt="Math Objectives">
+    </div>
+    <div class="objective-text">
+        <h2>Our Objective</h2>
+        <p>Our goal is to foster innovation and develop critical thinking in mathematical research and education.</p>
+    </div>
+</section>
+
+<section id="faculty" class="section">
+    <h2>Meet Our Faculty</h2>
+    <div class="faculty-grid">
+        <div class="faculty-card">
+            <img src="profile3.jpg" alt="Faculty 1">
+            <h3>Dr. John Doe</h3>
+            <p>Professor</p>
+        </div>
+        <div class="faculty-card">
+            <img src="profile4.avif" alt="Faculty 2">
+            <h3>Dr. Jane Smith</h3>
+            <p>Associate Professor</p>
+        </div>
+        <div class="faculty-card">
+            <img src="profile6.avif" alt="Faculty 3">
+            <h3>Dr. Emily Davis</h3>
+            <p>Assistant Professor</p>
+        </div>
+    </div>
+</section>
+
+<section id="alumni" class="section">
+    <h2>Notable Alumni</h2>
+    <div class="alumni-grid">
+        <div class="alumni-card">
+            <img src="alumni1.jpg" alt="Alumni 1">
+            <h3>Dr. Alan Turing</h3>
+            <p>Renowned Mathematician</p>
+        </div>
+        <div class="alumni-card">
+            <img src="alumni2.jpg" alt="Alumni 2">
+            <h3>Dr. Katherine Johnson</h3>
+            <p>Astronautics Pioneer</p>
+        </div>
+        <div class="alumni-card">
+            <img src="alumni3.jpg" alt="Alumni 3">
+            <h3>Dr. Andrew Wiles</h3>
+            <p>Professor of Mathematics</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <p><strong>Address:</strong> 123 Mathematics Lane, City, Country</p>
+        <p><strong>Email:</strong> contact@mathdept.edu</p>
+        <p><strong>Phone:</strong> +123-456-7890</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Mathematics Department | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

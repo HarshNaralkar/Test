@@ -1,0 +1,34 @@
+<svg width="160" height="185" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 185">
+  <!-- Background body -->
+  <rect x="0" y="0" width="160" height="185" fill="#ffffff" rx="80" ry="80" />
+
+  <!-- Ears -->
+  <g>
+      <circle cx="32.5" cy="35" r="32.5" fill="#ffffff">
+          <animateTransform attributeName="transform" type="translate" values="10,0; 0,0" dur="3s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="127.5" cy="35" r="32.5" fill="#ffffff">
+          <animateTransform attributeName="transform" type="translate" values="10,0; 0,0" dur="3s" repeatCount="indefinite" />
+      </circle>
+  </g>
+
+  <!-- Face components -->
+  <g id="face">
+      <!-- Eyes -->
+      <circle cx="60" cy="50" r="8" fill="#000000" />
+      <circle cx="100" cy="50" r="8" fill="#000000" />
+
+      <!-- Nostrils -->
+      <circle cx="80" cy="90" r="21" fill="#000000" />
+      <circle cx="80" cy="90" r="15" fill="#ffffff" />
+
+      <!-- Nose Line -->
+      <rect x="74" y="115" width="12" height="4" fill="#000000" />
+
+      <!-- Mouth -->
+      <rect x="55" y="125" width="50" height="25" fill="#cfecf9" rx="15" ry="15" />
+  </g>
+
+  <!-- Animated movement of the face -->
+  <animateTransform xlink:href="#face" attributeName="transform" type="translate" values="-60,-10; -30,-10" dur="3s" repeatCount="indefinite" />
+</svg>
